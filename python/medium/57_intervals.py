@@ -19,6 +19,7 @@ class Solution:
 
         replaced = False 
         i = 0
+        position = 0
 
         while i < len(intervals):
             currentInterval = intervals[i]
@@ -29,6 +30,7 @@ class Solution:
                     else: 
                         intervals[i] = self.merge(currentInterval, newInterval)
                     replaced = True
+                if i < len(intervals) - 1 and currentInterval[1]
                 i += 1
             else:
                 previous = intervals[i - 1]
